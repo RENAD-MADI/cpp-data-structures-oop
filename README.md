@@ -23,7 +23,7 @@ A console system for a pharmacy chain: branches, drugs, pharmacists and customer
 | `3-queue.cpp` | Queues (FIFO) |
 
 ### Restaurant system — `restaurant-system/`
-Food items, branches, menus and customers managed with classes and `std::vector`.
+Food items, stock, branches, menus and customers modelled with classes and `std::vector` (`main.cpp`).
 
 ### OOP exercises — `oop/`
 | Folder | Concepts |
@@ -36,6 +36,7 @@ Food items, branches, menus and customers managed with classes and `std::vector`
 
 ```bash
 g++ -std=c++20 -o pharmacy pharmacy-management/1-linked-list.cpp && ./pharmacy
+g++ -std=c++20 -o restaurant restaurant-system/main.cpp && ./restaurant
 g++ -std=c++20 -o cars oop/cars/*.cpp && ./cars
 g++ -std=c++20 -o shapes oop/shapes/shape_main.cpp && ./shapes
 ```

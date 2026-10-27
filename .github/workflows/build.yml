@@ -17,10 +17,7 @@ jobs:
           done
 
       - name: Restaurant system
-        run: |
-          for f in restaurant-system/*.cpp; do
-            g++ -std=c++20 -Wall -o "/tmp/$(basename "$f" .cpp)" "$f"
-          done
+        run: g++ -std=c++20 -Wall -o /tmp/restaurant restaurant-system/main.cpp
 
       - name: OOP exercises
         run: |
@@ -30,5 +27,6 @@ jobs:
 
       - name: Run the non-interactive demos
         run: |
+          /tmp/restaurant
           /tmp/cars
           /tmp/shapes
