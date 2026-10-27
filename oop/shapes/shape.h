@@ -123,7 +123,9 @@ public:
     {
         base = base_i;
         height = height_i;
-        hypotenuse = hypotenuse_i;
+        // In a right triangle the hypotenuse follows from the two legs; it was left at 0
+        // when not passed, which made the perimeter wrong.
+        hypotenuse = hypotenuse_i > 0 ? hypotenuse_i : hypot(base, height);
     }
 
     void computeArea() override
