@@ -10,9 +10,9 @@ int main(void)
     vector<Shape*> A(size);
 
     A[0] = new Square(5);
-    A[1] = new Triangle(4, 2);
+    A[1] = new RightTriangle(4, 2);
     A[2] = new Square(10);
-    A[3] = new Triangle(8, 4);
+    A[3] = new RightTriangle(8, 4);
     A[4] = nullptr;
     A[5] = new Circle(5);
     A[6] = new Rectangle(2, 4);
@@ -32,7 +32,7 @@ int main(void)
             A[i]->printPerimeter();
         }
         else
-            cout << "area = NULL";
+            cout << "area = NULL" << endl;
         cout << endl;
     }
 

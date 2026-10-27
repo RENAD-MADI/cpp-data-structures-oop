@@ -11,6 +11,9 @@ using namespace std;
 class Shape
 {
 public:
+    // Shapes are deleted through Shape* in main, so the destructor must be virtual.
+    virtual ~Shape() = default;
+
     void printArea()
     {
         cout << "area = " << area << endl;
